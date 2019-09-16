@@ -33,7 +33,7 @@ class NewTransaction extends StatelessWidget {
                 TextField(
                   decoration: InputDecoration(labelText: 'Title'),
                   controller: titleControler,
-                  onSubmitted: (_) => submitData(),1
+                  onSubmitted: (_) => submitData(),
                 ),
                 TextField(
                   decoration: InputDecoration(labelText: 'Amount'),
@@ -44,7 +44,7 @@ class NewTransaction extends StatelessWidget {
                 FlatButton(
                   child: Text('Add Transaction'),
                   textColor: Colors.blue,
-                  onPressed: () => submitData,
+                  onPressed: () => submitData(),
                 )
               ],
             ),

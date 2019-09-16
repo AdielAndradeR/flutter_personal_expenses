@@ -22,6 +22,12 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Personal Expenses'),
         backgroundColor: Colors.green,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {},
+            )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(children: <Widget>[
@@ -35,7 +41,13 @@ class MyHomePage extends StatelessWidget {
           UserTransaction()      
           ],
         )
-      )
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+        onPressed: () {},
+        )
     );
   }
 }
