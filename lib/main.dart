@@ -23,16 +23,18 @@ class MyHomePage extends StatelessWidget {
         title: Text('Personal Expenses'),
         backgroundColor: Colors.green,
       ),
-      body: Column(children: <Widget>[
-        Container(
-          width: double.infinity,
-          child: Card(
-            color: Colors.green,
-            elevation: 5,
-            child:Text('Charts')),
-          ),
-        UserTransaction()      
-        ],
+      body: SingleChildScrollView(
+        child: Column(children: <Widget>[
+          Container(
+            width: double.infinity,
+            child: Card(
+              color: Colors.green,
+              elevation: 5,
+              child:Text('Charts')),
+            ),
+          UserTransaction()      
+          ],
+        )
       )
     );
   }
