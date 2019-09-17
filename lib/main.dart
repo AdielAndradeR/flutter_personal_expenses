@@ -11,6 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Personal Expenses',
+      theme: ThemeData(
+        primarySwatch: Colors.amber,
+        accentColor: Colors.green,
+        fontFamily: 'Comfortaa'
+      ),
       home: MyHomePage(),
     );
   }
@@ -71,7 +76,6 @@ class _MyHomePageState extends State<MyHomePage>{
     return Scaffold(
       appBar: AppBar(
         title: Text('Personal Expenses'),
-        backgroundColor: Colors.green,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
@@ -95,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage>{
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        backgroundColor: Colors.green,
+        
         onPressed: () => _startAddNewTransaction(context),
         )
     );
